@@ -524,6 +524,14 @@ body {
   margin-right: 30px;
 }
 
+.projects-box {
+  padding-top: 20px;
+
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+
 .projects-link {
   text-decoration: none;
   color: inherit;
@@ -531,12 +539,13 @@ body {
 
 .projects-link img {
   display: block;
-  margin-bottom: 20px;
 }
 
 .projects-title {
   margin: 0;
   margin-bottom: 4px;
+  padding-left: 24px;
+  padding-right: 24px;
 
   color: var(--title-text-color);
   font-weight: 700;
@@ -547,13 +556,16 @@ body {
 
 .projects-type {
   margin: 0;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 20px;
 
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
 }
 
-.project-description {
+/* .project-description {
   margin: 0;
 
   background-color: var(--accent-color);
@@ -561,4 +573,4 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.55;
-}
+} */
