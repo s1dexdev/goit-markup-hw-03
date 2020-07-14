@@ -267,12 +267,13 @@ body {
   display: flex;
 }
 
-.team-item:not(:last-child) {
-  margin-right: 30px;
+.team-member-photo {
+  display: block;
+  margin-bottom: 30px;
 }
 
 .team-member-name {
-  margin-top: 30px;
+  margin-top: 0;
   margin-bottom: 10px;
 
   color: var(--title-text-color);
@@ -283,7 +284,8 @@ body {
 }
 
 .team-member-position {
-  margin-top: 0;
+  margin-top: 0px;
+  margin-bottom: 16px;
 
   font-weight: 400;
   font-size: 16px;
@@ -293,12 +295,26 @@ body {
 
 .team-member-contact {
   display: flex;
-  justify-content: space-evenly;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 24px;
 }
 
-.team-member-contact-item {
-  margin-top: 16px;
-  margin-bottom: 24px;
+.team-member-contact-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.team-member-contact-item .link {
+  display: block;
+  padding: 12px;
+}
+
+.team-item {
+  background-color: var(--secondary-text-color);
+}
+
+.team-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .team .link {
@@ -350,8 +366,15 @@ body {
 /* Footer */
 .footer {
   display: flex;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   background-color: #2f303a;
+}
+
+.footer .container {
+  display: flex;
+  align-items: baseline;
 }
 
 .footer-logo {
@@ -372,7 +395,18 @@ body {
 
 /* Address */
 
+.footer-address-box {
+  margin-right: 69px;
+}
+
+.address {
+  margin-top: 20px;
+}
+
 .address-text {
+  display: block;
+  margin-bottom: 9px;
+
   color: var(--secondary-text-color);
   font-style: normal;
   font-weight: 400;
@@ -381,6 +415,8 @@ body {
 }
 
 .address-link {
+  display: block;
+
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
@@ -389,12 +425,25 @@ body {
   line-height: 1.71;
 }
 
+.address-link:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .address-link:hover,
 .address-link:focus {
   color: var(--accent-color);
 }
 
 /* Social networks */
+
+.social-networks-box {
+  margin-right: 94px;
+}
+
+.social-networks-box .list {
+  margin-top: 20px;
+}
+
 .subscription {
   color: var(--secondary-text-color);
   text-transform: uppercase;
@@ -403,13 +452,13 @@ body {
   line-height: 1.14;
 }
 
-.social-networks .link {
+.social-networks-box .link {
   text-decoration: none;
   color: var(--secondary-text-color);
 }
 
-.social-networks .link:hover,
-.social-networks .link:focus {
+.social-networks-box .link:hover,
+.social-networks-box .link:focus {
   color: var(--accent-color);
 }
 
