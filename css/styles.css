@@ -245,11 +245,19 @@ body {
   display: flex;
 }
 
+.works-item img {
+  display: block;
+}
+
 .works-item:not(:last-child) {
   margin-right: 30px;
 }
 
 .works-text {
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+
   background-color: rgba(47, 48, 58, 0.8);
   color: var(--secondary-text-color);
   font-weight: 700;
